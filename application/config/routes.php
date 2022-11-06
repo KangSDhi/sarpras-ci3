@@ -60,3 +60,11 @@ $route['postlogin']['post'] = 'login/postlogin';
 $route['dashboard'] = 'dashboard/index';
 $route['ruangan'] = 'ruangan/index';
 $route['ruangan/(:num)'] = 'ruangan/ruang/$1';
+$route['ruangan/tambah'] = 'ruangan/create';
+$route['ruangan/store'] = 'ruangan/store';
+$route['ruangan/edit/(:num)'] = 'ruangan/edit/$1';
+$route['ruangan/update'] = 'ruangan/update';
+$route['ruangan/delete/(:num)'] = 'ruangan/delete/$1';
+$route['ruangan/(:num)/barang/tambah'] = 'barang/create/$1';
+$route['ruangan/barang/store'] = 'barang/store';
+

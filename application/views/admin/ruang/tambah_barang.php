@@ -42,23 +42,24 @@
                 <!-- BEGIN PAGE HEADER-->
                 <div class="row-fluid">
                     <div class="span12">
+                        <!-- BEGIN THEME CUSTOMIZER-->
 
                         <!-- END THEME CUSTOMIZER-->
                         <!-- BEGIN PAGE TITLE & BREADCRUMB-->
                         <h3 class="page-title">
-                            DATA TABEL RUANGAN
+                            <b>Form Pengisian Data Barang <?php echo $data_ruang->nama_ruang; ?></b>
                         </h3>
                         <ul class="breadcrumb">
                             <li>
-                                <a href="<?php echo base_url();  ?>index.php/admin">Home</a>
+                                <a href="#">Home</a>
                                 <span class="divider">/</span>
                             </li>
                             <li>
-                                <a href="">Data Ruangan</a>
+                                <a href="#">Form Master Data Barang <?php echo $data_ruang->nama_ruang; ?></a>
                                 <span class="divider">/</span>
                             </li>
                             <li class="active">
-                                Tabel Ruangan
+                                Form Pengisian Data Barang <?php echo $data_ruang->nama_ruang; ?>
                             </li>
 
                         </ul>
@@ -66,62 +67,88 @@
                     </div>
                 </div>
                 <!-- END PAGE HEADER-->
-                <!-- BEGIN EDITABLE TABLE widget-->
+                <!-- BEGIN PAGE CONTENT-->
                 <div class="row-fluid">
                     <div class="span12">
-                        <!-- BEGIN EXAMPLE TABLE widget-->
-                        <div class="widget purple">
+                        <!-- BEGIN SAMPLE FORMPORTLET-->
+                        <div class="widget green">
                             <div class="widget-title">
-                                <h4><i class="icon-reorder"></i> Tabel ruangan</h4>
-
+                                <h4><i class="icon-reorder"></i> Form Layouts</h4>
                             </div>
                             <div class="widget-body">
-                                <div>
-                                    <div class="clearfix">
-                                        <div class="btn-group">
-                                        </div>
-                                        <div class="btn-group pull-right">
-                                            <?php echo anchor('ruangan/tambah', 'Tambah Data', array('class' => 'btn btn-danger btn-sm')) ?>
+                                <!-- BEGIN FORM-->
+                                <form action="<?php echo base_url('ruangan/barang/store'); ?>" class="form-horizontal" method="POST">
+                                    <input type="hidden" name="id_ruang" value="<?php echo $data_ruang->id ?>">
+                                    <div class="control-group">
+                                        <label class="control-label">Nama Barang</label>
+                                        <div class="controls">
+                                            <input name="nama_barang" type="text" placeholder="nama barang" class="input-xlarge" />
                                         </div>
                                     </div>
-                                    <div class="space15"></div>
-                                    <table class="table table-striped table-hover table-bordered" id="editable-sample">
-                                        <thead>
-                                            <tr>
-                                                <th>No</th>
-                                                <th>Nama Ruangan</th>
-                                                <th>Action</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <?php
-                                            $no = 1;
-                                            foreach ($ruang as $item) {
+                                    <div class="control-group">
+                                        <label class="control-label">Kode Inventaris</label>
+                                        <div class="controls">
+                                            <input name="kode_inventaris" type="text" placeholder="Kode Inventaris" class="input-xlarge" />
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">Bahan</label>
+                                        <div class="controls">
+                                            <input name="bahan" type="text" placeholder="Bahan" class="input-xlarge" />
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">Tahun Pembelian</label>
+                                        <div class="controls">
+                                            <input name="tahun_pembelian" type="text" placeholder="Tahun Pembelian" class="input-xlarge" />
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">Jumlah</label>
+                                        <div class="controls">
+                                            <input name="jumlah" type="number" placeholder="Jumlah" class="input-xlarge" />
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">Rusak</label>
+                                        <div class="controls">
+                                            <input name="jumlah" type="number" placeholder="Rusak" class="input-xlarge" />
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">Status</label>
+                                        <div class="controls">
+                                            <input name="status" type="text" placeholder="Status" class="input-xlarge" />
+                                        </div>
+                                    </div>
 
-                                                echo "<tr>
-                                                <td>$no</td>
-                                                <td>$item->nama_ruang</td>
-                                                <td>" . anchor('ruangan/edit/' . $item->id, 'Edit') . "</td>
-                                                 <td>" . anchor('ruangan/delete/' . $item->id, 'Delete') . "</td>
-                                                </tr>";
 
-                                                $no++;
-                                            }
-                                            ?>
-                                        </tbody>
-                                    </table>
-                                </div>
+                                    <div class="form-actions">
+                                        <button type="submit" name="submit" class="btn btn-success">Simpan</button>
+                                        <?php echo anchor('ruangan/'.$data_ruang->id, 'Cancel', array('class' => 'btn btn-danger btn-sm')) ?>
+                                    </div>
+                                </form>
+                                <!-- END FORM-->
                             </div>
                         </div>
-                        <!-- END EXAMPLE TABLE widget-->
+                        <!-- END SAMPLE FORM PORTLET-->
                     </div>
                 </div>
 
-                <!-- END EDITABLE TABLE widget-->
             </div>
-            <!-- END PAGE CONTAINER-->
+            </form>
+            <!-- END FORM-->
         </div>
-        <!-- END PAGE -->
+    </div>
+    <!-- END EXTRAS widget-->
+    </div>
+    </div>
+
+    <!-- END PAGE CONTAINER-->
+    </div>
+    <!-- END PAGE -->
+    </div>
+    <!-- END CONTAINER -->
     </div>
     <!-- END CONTENT -->
     </div>

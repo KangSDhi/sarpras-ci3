@@ -91,13 +91,13 @@
                                                         ?>
                                                     </select>
                                                     <span class="input-group-btn">
-                                                        <button class="btn btn-default" type="submit">Cari</button>
+                                                        <button class="btn btn-primary" type="submit">Filter</button>
                                                     </span>
                                                 </div>
                                             </form>
                                         </div>
                                         <div class="btn-group pull-right">
-                                            <?php echo anchor('kepsek/post', 'Tambah Data', array('class' => 'btn btn-danger btn-sm')) ?>
+                                            <?php echo anchor('ruangan/'.$data_ruang->id.'/barang/tambah', 'Tambah Data', array('class' => 'btn btn-danger btn-sm')) ?>
 
                                         </div>
                                         <div class="space15"></div>
