@@ -148,8 +148,8 @@
                                                 <td><center>$item->tahun_pembelian</center></td>
                                                 <td><center>$item->jumlah</center></td>
                                                 <td><center>$item->status</center></td>
-                                                <td><center>" . anchor('kepsek/edit/' . $item->id, 'Edit') . "</center></td>
-                                                 <td><center>" . anchor('kepsek/delete/' . $item->id, 'Delete') .
+                                                <td><center>" . anchor('ruangan/'.$data_ruang->id.'/barang/edit/'.$item->id, 'Edit') . "</center></td>
+                                                 <td><center>" . anchor('ruangan/'.$data_ruang->id.'/barang/delete/' . $item->id, 'Delete') .
                                                         "</center></td>
                                                 
                                                 </tr>";

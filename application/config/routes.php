@@ -67,4 +67,7 @@ $route['ruangan/update'] = 'ruangan/update';
 $route['ruangan/delete/(:num)'] = 'ruangan/delete/$1';
 $route['ruangan/(:num)/barang/tambah'] = 'barang/create/$1';
 $route['ruangan/barang/store'] = 'barang/store';
+$route['ruangan/(:num)/barang/edit/(:num)'] = 'barang/edit/$1/$2';
+$route['ruangan/barang/update'] = 'barang/update';
+$route['ruangan/(:num)/barang/delete/(:num)'] = 'barang/delete/$1/$2';
 

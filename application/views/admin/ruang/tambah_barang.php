@@ -112,7 +112,7 @@
                                     <div class="control-group">
                                         <label class="control-label">Rusak</label>
                                         <div class="controls">
-                                            <input name="jumlah" type="number" placeholder="Rusak" class="input-xlarge" />
+                                            <input name="rusak" type="number" placeholder="Rusak" class="input-xlarge" />
                                         </div>
                                     </div>
                                     <div class="control-group">
