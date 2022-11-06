@@ -72,7 +72,7 @@
                         <!-- BEGIN EXAMPLE TABLE widget-->
                         <div class="widget purple">
                             <div class="widget-title">
-                                <h4><i class="icon-reorder"></i> Data Tabel Barang Ruang <?php echo $data_ruang->nama_ruang; ?></h4>
+                                <h4><i class="icon-reorder"></i> Data Tabel BArang Ruang <?php echo $data_ruang->nama_ruang; ?></h4>
 
                             </div>
                             <div class="widget-body">
