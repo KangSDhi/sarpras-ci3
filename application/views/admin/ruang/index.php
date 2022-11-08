@@ -127,6 +127,9 @@
                                                         <center>JUMLAH</center>
                                                     </th>
                                                     <th>
+                                                        <center>SISA</center>
+                                                    </th>
+                                                    <th>
                                                         <center>STATUS</center>
                                                     </th>
                                                     <th>
@@ -139,6 +142,8 @@
                                                 $no = 1;
                                                 foreach ($data_barang as $item) {
 
+													$sisa = $item->jumlah - $item->rusak;
+
                                                     echo "<tr>
                                                 <td><center>$no</center></td>
                                                 <td><center>$item->nama_ruang</center></td>
@@ -147,6 +152,7 @@
                                                 <td><center>$item->bahan</center></td>
                                                 <td><center>$item->tahun_pembelian</center></td>
                                                 <td><center>$item->jumlah</center></td>
+												<td><center>$sisa</center></td>
                                                 <td><center>$item->status</center></td>
                                                 <td><center>" . anchor('ruangan/'.$data_ruang->id.'/barang/edit/'.$item->id, 'Edit') . "</center></td>
                                                  <td><center>" . anchor('ruangan/'.$data_ruang->id.'/barang/delete/' . $item->id, 'Delete') .

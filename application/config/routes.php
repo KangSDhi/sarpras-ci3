@@ -55,6 +55,14 @@ $route['translate_uri_dashes'] = FALSE;
 
 
 $route['selamat_datang'] = 'welcome';
+$route['invkelas'] = 'home/invkelas';
+$route['invkelas/tkj'] = 'home/invkelastkj';
+$route['invkelas/tkr'] = 'home/invkelastkr';
+$route['invupj'] = 'home/invupj';
+$route['invkantor'] = 'home/invkantor';
+$route['tentangkami'] = 'home/tentangkami';
+$route['inv/data/(:num)'] = 'InvHome/index/$1';
+$route['inv/excel/(:num)'] = "InvHome/excel/$1";
 $route['login_admin'] = 'login/index';
 $route['postlogin']['post'] = 'login/postlogin';
 $route['dashboard'] = 'dashboard/index';

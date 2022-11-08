@@ -32,18 +32,7 @@ class Ruangan extends CI_Controller {
             ->get()
             ->result();
 
-        // print_r($data['data_tahun_pembelian']->result());
-        
-
-        // print_r($data['data_barang']);
-        // var_dump("a");
-        // print_r("a");
-
-
-
         $this->load->view('admin/ruang/index', $data);
-
-
     }
 
     public function create(){

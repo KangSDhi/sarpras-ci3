@@ -86,11 +86,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<!----start-top-nav---->
 			 <nav class="top-nav main-menu">
 					<ul class="top-nav">
-						<li><a href="<?php echo base_url();  ?>index.php/welcome">HOME </a><span> </span></li>
-						<li><a href="<?php echo base_url();  ?>index.php/Inventarisasikelas">INVENTARISASI KELAS</a><span> </span></li>
-						<li><a href="<?php echo base_url();  ?>index.php/Inventarisasiupj">INVENTARISASI UPJ</a><span> </span></li>
-						<li><a href="<?php echo base_url();  ?>index.php/Inventarisasikantor">INVENTARISASI KANTOR</a><span> </span></li>
-						<li><a href="<?php echo base_url();  ?>index.php/tentangkami">TENTANG KAMI</a><span> </span></li>
+						<li><a href="<?php echo base_url('home');  ?>">HOME </a><span> </span></li>
+						<li><a href="<?php echo base_url('invkelas');  ?>">INVENTARISASI KELAS</a><span> </span></li>
+						<li><a href="<?php echo base_url('invupj');?>">INVENTARISASI UPJ</a><span> </span></li>
+						<li><a href="<?php echo base_url('invkantor');?>">INVENTARISASI KANTOR</a><span> </span></li>
+						<li><a href="<?php echo base_url('tentangkami');  ?>">TENTANG KAMI</a><span> </span></li>
 						<div class="clearfix"> </div>
 					</ul>
 					<a href="<?php echo base_url();  ?>assets3/#" id="pull"><img src="<?php echo base_url();  ?>assets3/images/nav-icon.png" title="menu" /></a>
